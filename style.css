@@ -1,20 +1,86 @@
-div{
-    background-color: purple;
+*{
+    box-sizing: border-box;
+}
+
+body{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 300px;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-h2, p{
-    color: white;
-    text-align: center;
-
-}
-
-img{
+    background-color: rgb(236, 236, 236);
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
     width: 100%;
-    border-radius: 15px;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+
+
+.navbar{
+    display: flex;
+    
+    background-color: rgb(36, 36, 36);
+    padding: 10px;
+    width: 100%;
+}
+
+.links{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.links a{
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+    font-weight: 650;
+    font-size: 1.25rem;
+}
+
+.main-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50vh;
+    padding: 60px 80px;
+    flex: 1;
+}
+
+.texts{
+    max-width: 50%;
+}
+
+.texts h1{
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.texts h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(102, 102, 102);
+}
+
+.texts p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(102, 102, 102);
+}
+
+.image{
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.image img{
+    width: 100%;
+    max-width: 350px;
+    border-radius: 50%;
+}
+
+.bottom{
+    background-color: rgb(36, 36, 36);
+    padding: 40px 20px;
+    border-top: 1px solid#333;
+    height: 10vh;
 }
