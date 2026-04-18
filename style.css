@@ -13,7 +13,11 @@ html{
 body{
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to bottom, #e9e9e9 40%, #ffffff 40%);
+    background-image: linear-gradient(to bottom, transparent 40%, #ffffff 40%),
+    url(images/home_bg.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     padding: 0;
     border: 0px;
@@ -68,18 +72,20 @@ body{
 
 .texts h1{
     font-size: 5rem;
+    font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .texts h2{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
     text-align: center;
-    color: rgb(102, 102, 102);
+    color: rgb(0, 0, 0);
 }
 
 .texts p{
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(102, 102, 102);
+    color: rgb(0, 0, 0);
 }
 
 .image{
@@ -145,4 +151,33 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.about-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    height: 50px;
+    width: 200px;
+}
+
+.icons{
+    max-width: 100vw;
+}
+
+.icons a{
+    font-size: 2.5rem;
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
 }
