@@ -13,7 +13,7 @@ html{
 body{
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to bottom, transparent 40%, #ffffff 40%),
+    background-image: linear-gradient(to bottom, transparent 40%, #fffdfd 40%),
     url(images/home_bg.jpg);
     background-size: cover;
     background-position: center top;
@@ -117,7 +117,7 @@ body{
     border-radius: 50%;
     border-width: 10px;
     border-style: solid;
-    border-color: white;
+    border-color: #fffdfd;
     transition: all 0.5s ease;
 }
 
@@ -134,47 +134,8 @@ body{
     height: 10vh;
 }
 
-.skills{
-    min-height: 100vh;
-    max-width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.skills_img{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    gap: 20px;
-    
-}
 
 
-.skills img{
-    max-width: 50%;
-    border-width: 5px;
-    border-style: solid;
-    border-color: rgb(131, 131, 131);
-    border-radius: 20px;
-}
-
-.skills_img div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-}
-
-.introduction{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
 
 .about-me{
     display: flex;
