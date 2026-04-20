@@ -32,10 +32,11 @@ body{
     display: flex;
     position: fixed;
     top: 0;
-    background-color: rgb(36, 36, 36);
     padding: 10px 200px;
     width: 100%;
 }
+
+
 
 
 .links{
@@ -47,9 +48,18 @@ body{
 
 .links a{
     text-decoration: none;
-    color: rgb(211, 211, 211);
+    color: rgb(0, 0, 0);
     font-weight: 900;
     font-size: 1.5rem;
+    background-image: linear-gradient(120deg, #5d5555 0%, #5d5555 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.4rem;
+    background-position: 0 89%;
+    transition: background-size 0.5s ease;
+}
+
+.links a:hover{
+    background-size: 100% 1.8rem;
 }
 
 .main-section{
@@ -73,8 +83,9 @@ body{
 
 .texts h1{
     font-size: 5rem;
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
 }
 
 .texts h2{
@@ -107,7 +118,14 @@ body{
     border-width: 10px;
     border-style: solid;
     border-color: white;
+    transition: all 0.5s ease;
 }
+
+.image img:hover{
+    border-color: #999090;
+}
+
+
 
 .bottom{
     background-color: rgb(36, 36, 36);
@@ -166,11 +184,16 @@ body{
     background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-weight: 900;
     border-radius: 25px;
     text-decoration: none;
     height: 50px;
     width: 200px;
+    transition: all 0.5s ease;
+}
+
+.about-me:hover{
+    transform: scale(1.25);
 }
 
 .icons{
@@ -179,8 +202,15 @@ body{
     justify-content: center;
     padding: 20px 0px;
     gap: 10px;
+
+    
 }
 
 .icons a{
     font-size: 2.5rem;
+    transition: all 0.5s ease;
+}
+
+.icons a:hover{
+    transform: scale(1.25);
 }
