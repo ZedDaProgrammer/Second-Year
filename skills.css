@@ -18,7 +18,6 @@ body{
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding: 0;
     border: 0px;
     margin: 0;
     width: 100%;
@@ -60,15 +59,17 @@ body{
 }
 
 .skills{
-    max-width: 100vw;
-    max-height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     flex-direction: column;
-    padding-top: 10px;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    gap: 30px;
+    margin-bottom: 60px;
 }
 
 .skills h1{
@@ -79,27 +80,27 @@ body{
     background-position: 0 89%;
 }
 
-.front-end{
+.front-end, .back-end{
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    gap: 20px;
+    gap: 30px;
 
 }
 
-.front-end h3, p{
+.front-end h3, p, .back-end h3, .database h3{
     color: rgb(236, 236, 236);
 }
 
-.html, .css, .javascript{
+.html, .css, .javascript, .java, .nodejs, .mysql{
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     flex-direction: column;
     text-align: center;
-    box-shadow: 0 0 15px 5px rgba(71, 68, 65, 0.8);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     padding: 40px;
     height: 250px;
@@ -108,12 +109,12 @@ body{
     transition: all 0.5s ease;
 }
 
-.html:hover, .css:hover, .javascript:hover{
-    transform: scale(1.2);
-    flex: 2;
+.html:hover, .css:hover, .javascript:hover, .java:hover, .nodejs:hover, .mysql:hover{
+    transform: scale(1.15);
+    box-shadow: 0 0 15px 5px rgba(71, 68, 65, 0.8);
 }
 
-.front-end i{
+.front-end i, .back-end i, .database i{
     color: #5d5555;
     font-size: 40px;
 }
